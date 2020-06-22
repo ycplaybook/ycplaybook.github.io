@@ -37,31 +37,6 @@
             }
         </style>
 
-        <script>
-            function start_planning()
-            {
-                // This part of function gotten from "musefan" (stackoverflow, posted November 3, 2016)
-                // Take input, get in expanded format (6 Febbruary, 2021)
-                var date = document.querySelector('#date').value;
-                var d= date.split("/");
-                var f = new Date(d[2], d[0] - 1, d[1]);
-                console.log(f.toString());
-
-                // This part of function gotten from "Stephen Wrighton" (stackoverflow, posted August 18, 2009)
-                // Subtract 128 days
-                var start_date = new Date(f);
-                start_date.setDate(start_date.getDate()-128);
-
-                // This part of function gotten from "Inanda Menezes" (stackoverflow, posted January 9, 2015)
-                // Turn start date into normal format (Thu, 1 October 2020)
-                start_date = new Date(start_date).toUTCString();
-                start_date = start_date.split(' ').slice(0, 4).join(' ');
-                console.log(start_date);
-
-                document.querySelector('#result').innerHTML = "Suggested Date to Begin Planning: " + start_date
-            }
-        </script>
-
         <title>Yogi Cup Playbook</title>
 
     </head>
