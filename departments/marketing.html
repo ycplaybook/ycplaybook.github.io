@@ -42,13 +42,36 @@
             }
         </style>
 
+        <script>
+            let opacity=0;
+            let intervalID=0;
+            function fadeout()
+            {
+                intervalID=setInterval(hide,1000);
+            }
+            function hide()
+            {
+                let change=document.querySelector('.transitionOUT');
+                opacity=Number(window.getComputedStyle(change).getPropertyValue("opacity"));
+                if (opacity>0)
+                {
+                    opacity=opacity-0.1;
+                    change.style.opacity=opacity;
+                }
+                else
+                {
+                    clearInterval(intervalID);
+                }
+            }
+        </script>
+
         <title>Marketing</title>
 
     </head>
 
     <body>
 
-        <nav class="navbar navbar-expand-md navbar-light bg-light border">
+        <nav onclick="fadeout()" class="navbar navbar-expand-md navbar-light bg-light border">
             <a class="navbar-brand" href="../index.html"><span class="blue">Yogi Cup Playbook</a>
             <button aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-target="#navbar" data-toggle="collapse" type="button">
                 <span class="navbar-toggler-icon"></span>
@@ -66,13 +89,13 @@
             </div>
         </nav>
 
-        <main class="transitiond">
+        <main class="transitiond transitionOUT">
             <p class="white">  </p>
             <h1>Marketing</h1>
-            <p><a class="sfont" href="../departments.html">Return</a></p>
+            <p><a class="sfont" onclick="fadeout()" href="../departments.html">Return</a></p>
         </main>
 
-        <iframe rel="preload" width="1195" height="430" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTdpNuxB1kv0Ozk9_uIDw9Pdqj6EzSiHe3ciZvFf0YGc74n3mWF6_qXMJ0zYVVI80M4IyRwQnq11UN5/pubhtml?gid=1188988238&amp;single=true&amp;widget=true&amp;headers=false"></iframe>
+        <iframe class="transitiond transitionOUT" rel="preload" width="1195" height="430" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTdpNuxB1kv0Ozk9_uIDw9Pdqj6EzSiHe3ciZvFf0YGc74n3mWF6_qXMJ0zYVVI80M4IyRwQnq11UN5/pubhtml?gid=1188988238&amp;single=true&amp;widget=true&amp;headers=false"></iframe>
 
     </body>
 
