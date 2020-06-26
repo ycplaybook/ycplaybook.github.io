@@ -1,3 +1,4 @@
+<?php include("/Users/uditpatel/Desktop/testing/password_protect.php"); ?>
 <!DOCTYPE html>
 
 <html lang="en">
@@ -69,13 +70,13 @@
             </button>
             <div class="collapse navbar-collapse" id="navbar">
                     <ul class="navbar-nav mr-auto mt-2">
-                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="index.php">Home</a></li>
                         <li class="nav-item"><a class="nav-link" href="timeline.html">Timeline</a></li>
                         <li class="nav-item"><a class="nav-link" href="departments.html">Departments</a></li>
                         <li class="nav-item"><a class="nav-link" href="guides.html">Guides</a></li>
                     </ul>
                     <ul class="navbar-nav ml-auto mt-2">
-                        <li class="nav-item"><a class="nav-link" href="login.html">Log Out</a></li>
+                        <li class="nav-item"><a class="nav-link" href="http://www.example.com/path/to/protected/page.php?logout=1">Log Out</a></li>
                     </ul>
             </div>
         </nav>
