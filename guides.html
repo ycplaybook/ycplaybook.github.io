@@ -77,6 +77,15 @@
             {
                 white-space: pre;
             }
+            .accordion
+            {
+                width: 80%;
+                text-align: left;
+            }
+            .container-fluid
+            {
+                padding: 60px 50px;
+            }
         </style>
 
         <title>Guides</title>
@@ -106,17 +115,25 @@
         <main class="container p-5 transitionIN transitionOUT">
 
             <h1>Guides</h1>
-            <h2>Under Construction</h2>
 
             <p class="white"> </p>
 
-            <form class="right" onsubmit="start_planning(); return false;">
-                When is Yogi Cup?
-                <input type="text" placeholder="MM/DD/YYYY" id="date">
-                <input type="submit">
-            </form>
-            <div class="right" id="result">
-                 Suggested Date to Begin Planning:
+            <p class="text-center">
+                <button class="btn btn-info" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                    When to start planning Yogi Cup
+                </button>
+            </p>
+            <div class="collapse" id="collapseExample">
+                <div class="card card-body text-center">
+                    <form class="right" onsubmit="start_planning(); return false;">
+                        When is Yogi Cup?
+                        <input type="text" placeholder="MM/DD/YYYY" id="date">
+                        <input type="submit">
+                    </form>
+                    <div class="right" id="result">
+                         Suggested Date to Begin Planning:
+                    </div>
+                </div>
             </div>
 
             <p class="white"> </p>
@@ -135,6 +152,113 @@
 
         </main>
 
+        <div class="accordion container-fluid" id="accordionExample">
+            <div class="card">
+            <div class="card-header panel-heading" id="headingOne">
+              <h2 class="mb-0">
+                <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne" style="color:black">
+                    <h5>Mailchimp</h5>
+                </button>
+              </h2>
+            </div>
+            <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+              <div class="card-body">
+                  Mailchimp content goes here
+              </div>
+            </div>
+            </div>
+
+            <div class="card">
+              <div class="card-header panel-heading" id="headingTwo">
+                <h2 class="mb-0">
+                  <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo" style="color:black">
+                      <h5>Marketing</h5>
+                  </button>
+                </h2>
+              </div>
+              <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                <div class="card-body">
+                    Marketing content goes here
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-header panel-heading" id="headingThree">
+                <h2 class="mb-0">
+                  <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree" style="color:black">
+                    <h5>Photobooth</h5>
+                  </button>
+                </h2>
+              </div>
+              <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                <div class="card-body">
+                    Photobooth content goes here
+                </div>
+              </div>
+            </div>
+
+          <div class="card">
+            <div class="card-header panel-heading" id="headingFour">
+              <h2 class="mb-0">
+                <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour" style="color:black">
+                  <h5>Playoffs</h5>
+                </button>
+              </h2>
+            </div>
+            <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
+              <div class="card-body">
+                  Playoff content goes here
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-header panel-heading" id="headingFive">
+              <h2 class="mb-0">
+                <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive" style="color:black">
+                  <h5>Referees</h5>
+                </button>
+              </h2>
+            </div>
+            <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionExample">
+              <div class="card-body">
+                  Referee content goes here
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-header panel-heading" id="headingSix">
+              <h2 class="mb-0">
+                <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix" style="color:black">
+                  <h5>Scorekeeping</h5>
+                </button>
+              </h2>
+            </div>
+            <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordionExample">
+              <div class="card-body">
+                  Scorekeeping content goes here
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-header panel-heading" id="headingSeven">
+              <h2 class="mb-0">
+                <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven" style="color:black">
+                  <h5>Yogi Cup Rules and Regulations</h5>
+                </button>
+              </h2>
+            </div>
+            <div id="collapseSeven" class="collapse" aria-labelledby="headingSeven" data-parent="#accordionExample">
+              <div class="card-body">
+                  Rules go here
+              </div>
+            </div>
+          </div>
+
+      </div>
 
     </body>
 
