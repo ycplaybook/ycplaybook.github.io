@@ -26,14 +26,15 @@
 
         <title>Log In</title>
 
+        <script type="text/javascript" src="pass.js"></script>
         <script>
             function check()
             {
                 let word = document.querySelector('#pass').value;
 
-                if (word === '123')
+                if (word === password)
                 {
-                    window.location.href = "somethinghardtofigureout/home.html";
+                    window.location.href = filepath;
                 }
                 else
                 {
