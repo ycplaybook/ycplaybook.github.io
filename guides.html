@@ -86,6 +86,10 @@
             {
                 padding: 60px 50px;
             }
+            .list
+            {
+                line-height:200%;
+            }
         </style>
 
         <title>Guides</title>
@@ -157,7 +161,7 @@
             <div class="card-header panel-heading" id="headingOne">
               <h2 class="mb-0">
                 <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne" style="color:black">
-                    <h5>Mailchimp</h5>
+                    <h4>Mailchimp</h4>
                 </button>
               </h2>
             </div>
@@ -172,7 +176,7 @@
               <div class="card-header panel-heading" id="headingTwo">
                 <h2 class="mb-0">
                   <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo" style="color:black">
-                      <h5>Marketing</h5>
+                      <h4>Marketing</h4>
                   </button>
                 </h2>
               </div>
@@ -187,7 +191,7 @@
               <div class="card-header panel-heading" id="headingThree">
                 <h2 class="mb-0">
                   <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree" style="color:black">
-                    <h5>Photobooth</h5>
+                    <h4>Photobooth</h4>
                   </button>
                 </h2>
               </div>
@@ -202,13 +206,71 @@
             <div class="card-header panel-heading" id="headingFour">
               <h2 class="mb-0">
                 <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour" style="color:black">
-                  <h5>Playoffs</h5>
+                  <h4>Playoffs</h4>
                 </button>
               </h2>
             </div>
             <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
-              <div class="card-body">
-                  Playoff content goes here
+              <div class="card-body list">
+                  <h5>To make the Playoff Schedule:</h5>
+                  <ol>
+                      <li>Finalize the number of teams that will make playoffs</li>
+                        <ol type="a"><li>In 2020, 30 K1 and 16 K2 teams made playoffs</li></ol>
+                      <li>Coordinate with the facility to determine the number of courts available for use on playoff day</li>
+                      <li>Create a Google Sheet. In that file, set up the schedule for the playoffs in a similar manner to the <a href="https://docs.google.com/spreadsheets/d/1x2h4MLeR-GJ-vWai7PjoZAREMw4NB6SXTxxSmeUFnwQ/edit?usp=sharing" target="_blank">2020 Playoff Schedule</a></li>
+                        <ol type="a">
+                            <li>Make sure to get updated facility costs and to update timings as needed</li>
+                            <li>K1 Finals should be played before K2 Finals. Also, there is typically a lunch break between Semi-Finals and Finals</li>
+                            <li>If it is up to us to decide the number of courts to use on playoff day, set up multiple schedules, with each schedule using a different number of courts, to determine the schedule that minimizes costs + makes the most sense timewise (Check out the different tabs in the 2020 Playoff Schedule file for an example)</li>
+                        </ol>
+                      <li>Confirm schedule with leads + Swami</li>
+                      <li>Follow-up with RCTLs and RCs to make sure that the contract for the courts is signed</li>
+                  </ol>
+
+                  <p class="white"> <p>
+
+                  <h5>To determine Playoff Standings + make Brackets:</h5>
+                  <ol>
+                      <li>Confirm records with every team</li>
+                        <ol type="a">
+                            <li>Done by RAs after regular season games end</li>
+                            <li>To check the 2020 record confirmations, click <a href="https://docs.google.com/spreadsheets/d/1LpBXKP-4phlLq4zJktRj9gZ5zO1buxix9qRERaL3Gog/edit?usp=sharing" target="_blank">here</a></li>
+                        </ol>
+                      <li>Update regular standings as needed</li>
+                        <ol type="a">
+                            <li>Check regular standings to ensure every team is accounted for (even teams that didn’t make playoffs)</li>
+                            <li>To see 2020 regular standings, click <a href="https://docs.google.com/spreadsheets/d/18vMJUMGt8UqAN-sCzlHVZ3LumLn_8OeTktqKLQ-m2T4/edit?usp=sharing" target="_blank">here</a></li>
+                        </ol>
+                      <li>Make pivot table filtered by team record</li>
+                        <ol type="a">
+                            <li>Check pivot table to ensure every team is accounted for (even team that didn’t make playoffs)</li>
+                            <li>To see the 2020 K1 Final Standings, click <a href="https://docs.google.com/spreadsheets/d/1LpBXKP-4phlLq4zJktRj9gZ5zO1buxix9qRERaL3Gog/edit?usp=sharing" target="_blank">here</a></li>
+                        </ol>
+                      <li>Filter regular standings sheet to ensure pivot table is correct</li>
+                      <li>Make K1 and K2 brackets: the highest ranked team in each league is the first seed, the second ranked team is the second seed, etc.</li>
+                      <ol type="a">
+                          <li>Safely store scoresheets for all lower-seeded teams and teams that barely missed the playoffs. This is done to ensure that inputs are correct and to use as a reference point for any arguments</li>
+                      </ol>
+                  </ol>
+
+                  <p class="white"> <p>
+
+                  <h5>To determine Playoff Seeding when multiple teams have the same record:</h5>
+                  <ol>
+                      <li>Rank teams according to point differential</li>
+                        <ol type="a"><li>Teams with a higher point differential are given a higher seed. Note that the point differential for each game is capped at 20.</li></ol>
+                      <li>If multiple teams have the same record and same point differentials, rank them according to strength of schedule</li>
+                        <ol type="a">
+                            <li>For Yogi Cup purposes, strength of schedule is determined by measuring a team’s opponents’ average winning percentage. This is done by adding up the records of all the opponents a team faced and converting that summed record into a decimal*</li>
+                            <li>Example: if a team played 5 teams whose records were 5-0, 4-1, 3-2, 4-1, and 3-2, the team’s opponents’ summed record would be 19-6. When converted to a decimal, the result would be 0.76. The team’s strength of schedule would thus be 0.76*</li>
+                        </ol>
+                      <li>If multiple teams have the same record, same point differential, and same strength of schedule, rank them according to the number of points they allowed in all their games</li>
+                        <ol type="a"><li>Sum the points scored by a team's opponents in all their games. That sum is their “Points Allowed” value. Whichever team has a lower “Points Allowed” value is seeded higher.</li></ol>
+                  </ol>
+
+                  <p>*Suggestion: this method of determining strength of schedule is not the best. Click <a href="https://www.researchgate.net/profile/Paul_Fearnhead/publication/227369009_Calculating_Strength_of_Schedule_and_Choosing_Teams_for_March_Madness/links/0912f51399e3a33613000000/Calculating-Strength-of-Schedule-and-Choosing-Teams-for-March-Madness.pdf" target="_blank">here</a> for a better method of determining strength of schedule.
+                      This <a href="https://www.nbastuffer.com/analytics101/relative-percentage-index-rpi/" target="_blank">link</a> also provides a formula that can be used to provide better standings / tiebreakers (it essentially provides the same information as strength of schedule, but in a more robust manner).</p>
+
               </div>
             </div>
           </div>
@@ -217,7 +279,7 @@
             <div class="card-header panel-heading" id="headingFive">
               <h2 class="mb-0">
                 <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive" style="color:black">
-                  <h5>Scheduling</h5>
+                  <h4>Scheduling</h4>
                 </button>
               </h2>
             </div>
@@ -232,7 +294,7 @@
             <div class="card-header panel-heading" id="headingSix">
               <h2 class="mb-0">
                 <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix" style="color:black">
-                  <h5>Scorekeeping</h5>
+                  <h4>Scorekeeping</h4>
                 </button>
               </h2>
             </div>
@@ -247,7 +309,7 @@
             <div class="card-header panel-heading" id="headingSeven">
               <h2 class="mb-0">
                 <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven" style="color:black">
-                  <h5>Yogi Cup Rules and Regulations</h5>
+                  <h4>Yogi Cup Rules and Regulations</h4>
                 </button>
               </h2>
             </div>
