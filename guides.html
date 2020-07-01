@@ -28,7 +28,7 @@
             function start_planning()
             {
                 // This part of function gotten from "musefan" (stackoverflow, posted November 3, 2016)
-                // Take input, get in expanded format (6 Febbruary, 2021)
+                // Take input, get in expanded format (6 February, 2021)
                 var date = document.querySelector('#date').value;
                 var d= date.split("/");
                 var f = new Date(d[2], d[0] - 1, d[1]);
@@ -390,7 +390,7 @@
                           <ul>
                               <li>All teams participating in Yogi Cup are included in the schedule</li>
                               <li>All teams play the same number of games</li>
-                              <li>No two teams play each other more than twice</li>
+                              <li>No two teams play each other more than once</li>
                               <li>No team plays a back-to-back</li>
                           </ul>
                       <li>After checking the schedule, we need to format the overall schedule, and create K1/K2 games schedules and court-wise schedules</li>
@@ -454,7 +454,7 @@
             <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordionExample">
               <div class="card-body list">
                   <h5>Statistics</h5>
-                  Below is a brief guide to the statistical categories which scorekeepers are expected to record.
+                  Below is a brief guide to the statistical categories which scorekeepers are expected to track.
                   <ul>
                       <li><strong>Points</strong>: the total number of points a player scored</li>
                           <ul>
