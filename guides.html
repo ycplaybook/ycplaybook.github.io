@@ -45,7 +45,14 @@
                 start_date = start_date.split(' ').slice(0, 4).join(' ');
                 console.log(start_date);
 
-                document.querySelector('#result').innerHTML = "Suggested Date to Begin Planning: " + start_date
+                if (start_date === "Invalid Date")
+                {
+                    document.querySelector('#result').innerHTML = start_date;
+                }
+                else
+                {
+                    document.querySelector('#result').innerHTML = "Suggested Date to Begin Planning: " + start_date;
+                }
             }
         </script>
 
