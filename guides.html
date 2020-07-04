@@ -27,10 +27,27 @@
         <script>
             function start_planning()
             {
-                // This part of function gotten from "musefan" (stackoverflow, posted November 3, 2016)
+                // Part of this function gotten from "musefan" (stackoverflow, posted November 3, 2016)
                 // Take input, get in expanded format (6 February, 2021)
                 var date = document.querySelector('#date').value;
                 var d= date.split("/");
+
+                if (d[0] > 12)
+                {
+                    document.querySelector('#result').innerHTML = "Invalid Date";
+                    return;
+                }
+                else if (d[1] > 31)
+                {
+                    document.querySelector('#result').innerHTML = "Invalid Date";
+                    return;
+                }
+                else if (d[2] < 100)
+                {
+                    document.querySelector('#result').innerHTML = "Invalid Date";
+                    return;
+                }
+
                 var f = new Date(d[2], d[0] - 1, d[1]);
                 console.log(f.toString());
 
